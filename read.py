@@ -14,14 +14,24 @@ def Read():
         inputs.append(tempLine)
         tempLine=[int(i) for i in line[1].split(',')]
         outputs.append(tempLine)
-    lines=[]
-    lines.append(inputs[0])
+    lines=[[]]
+    lines[0].append(inputs[0])
     hiddenHeight= int(input('Please Enter Hidden Layers Height=\n'))
+    tempInput=[]
     for i in range(hiddenHeight):
-        tempInput=int(input('Please Enter Hidden Layers Length=\n'))
-        tempLine=[0 for i in range(tempInput)]
+        tempInput.append(int(input('Please Enter Hidden Layers Length=\n')))
+        tempLine=[0 for i in range(tempInput[i])]
         tempLine.append(1)
-        lines.append(tempLine)
-    lines.append(outputs[0])
-    print("\nRead Succesed!!!")
+        tempInput[i]=tempLine        
+        lines[0].append(tempLine)
+    lines[0].append(outputs[0])
+    for i in range(1,len(inputs)):
+        lines.append([])
+        lines[i].append(inputs[i])
+        for j in range(hiddenHeight):
+            lines[i].append(tempInput[j])
+        lines[i].append(outputs[i])
+    #print("L0",lines[0])
+    #print("L1",lines[1])
+    #print("\nRead Succesed!!!")
     return lines

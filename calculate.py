@@ -26,5 +26,5 @@ def CalculateDelta(nodeWeight,weight,result,delta):
                 for k in range(len(weight[i-1][j])):
                     delta[i-1][j][k]=learningRate*nodeS[i][k]\
                         *nodeWeight[i-1][j]+momentum*delta[i-1][j][k]
-    print("\nDelta Calculate Successed!!!")
+    #print("\nDelta Calculate Successed!!!")
     return delta,nodeS

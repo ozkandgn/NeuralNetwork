@@ -25,5 +25,6 @@ def Try(nodeWeight,weight,printBool=False):
                         nodeWeight[i][j]+=weight[i-1][k][j]*nodeWeight[i-1][k]
                 nodeWeight[i][j]=sigmoid.Sigmoid(nodeWeight[i][j])
     if printBool:
-        print("\nSuccessful Try!!!")
+        #print("\nSuccessful Try!!!")
+        pass
     return nodeWeight,result,difference

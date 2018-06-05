@@ -1,5 +1,3 @@
-import tryNetwork
-
 def Train(weight,delta):
     for i in range(len(delta)):
         for j in range(len(delta[i])):
