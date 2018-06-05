@@ -12,3 +12,7 @@
 ##### **Result**
 
 ![](https://github.com/ozkandgn/NeuralNetwork/blob/master/images/testOutput.PNG)
+
+##### **Writen diagram**
+
+![](https://github.com/ozkandgn/NeuralNetwork/blob/master/images/writtenDiagram.png)
