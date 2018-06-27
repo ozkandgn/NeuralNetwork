@@ -3,16 +3,16 @@ def Read():
     inputs=[]
     outputs=[]
     try:
-        text_file=open("testValues.txt", "r")
+        text_file=open("newTestValues.txt", "r")
         lines=text_file.read().split('\n')
     except:
         return []
     for line in lines:
         line=line.split(':')
-        tempLine=[int(i) for i in line[0].split(',')]
-        tempLine.append(1)
+        tempLine=[float(i) for i in line[0].split(',')]
+        tempLine.append(biasValue)
         inputs.append(tempLine)
-        tempLine=[int(i) for i in line[1].split(',')]
+        tempLine=[float(i) for i in line[1].split(',')]
         outputs.append(tempLine)
     lines=[[]]
     lines[0].append(inputs[0])
