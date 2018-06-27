@@ -16,3 +16,14 @@
 ##### **Writen diagram**
 
 ![](https://github.com/ozkandgn/NeuralNetwork/blob/master/images/writtenDiagram.png)
+
+
+********************************************************
+**Update**
+********************************************************
+
+
+### **New test values added**
+This process is two values sum
+
+![](https://github.com/ozkandgn/NeuralNetwork/blob/master/images/newTestOutput.PNG)
